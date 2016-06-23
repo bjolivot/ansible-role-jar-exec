@@ -1,0 +1,7 @@
+---
+
+# Check var is defined :
+#
+- name: Check je_jar_path var
+  debug: msg="Cheking {{ je_jar_path | mandatory  }} "
+  tags: check

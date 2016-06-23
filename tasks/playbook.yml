@@ -1,0 +1,5 @@
+---
+# here comes the real playbook, executed after env check
+
+- name: start jar
+  shell: cd {{ je_working_dir }} && java {{ je_java_options }} -jar {{ je_jar_path }} {{ je_jar_args }}

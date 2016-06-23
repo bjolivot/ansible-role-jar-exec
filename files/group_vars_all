@@ -1,0 +1,19 @@
+# put here all vars infos
+# this file could be deployed in your group_vars/all/ directory for easy understanding
+#
+#
+#
+#
+# madatory vars :
+
+# je_jar_path: full path to jar
+
+
+# exec command will be :
+# shell: cd {{ je_working_dir }} && java {{ je_java_options }} -jar {{ je_jar_path }} {{ je_jar_args }}
+
+# optional vars
+#
+# je_working_dir: ""
+# je_java_options: ""
+# je_jar_args: ""

@@ -1,0 +1,48 @@
+jar-exec
+==================
+
+Execute jar file
+
+
+exec command will be :
+shell: cd {{ je_working_dir }} && java {{ je_java_options }} -jar {{ je_jar_path }} {{ je_jar_args }}
+
+
+Role Variables
+--------------
+
+
+madatory vars :
+
+ je_jar_path: full path to jar
+
+
+
+optional vars  :
+
+ je_working_dir: where to go before star jar
+ je_java_options: java options (ex: -Xmx4g)
+ je_jar_args: Arguments passed to jar
+
+You can copy the file files/group_vars_all in the playbook group_vars/all/directory for easy config (allready done if playbook-generator is used)
+
+
+How to use 
+----------
+
+Put here the way to use this role.
+
+    - hosts: server
+      roles:
+         - { role: jar-exec, je_jar_path: "myjar.jar" }
+
+License
+-------
+
+Licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+
+Author Information
+------------------
+
+Talk about you :)
