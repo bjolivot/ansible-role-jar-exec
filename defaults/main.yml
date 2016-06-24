@@ -7,7 +7,8 @@
 
 
 # exec command will be :
-# shell: cd {{ je_working_dir }} && java {{ je_java_options }} -jar {{ je_jar_path }} {{ je_jar_args }}  
+# shell: cd {{ je_working_dir }} && java {{ je_java_options }} -jar {{ je_jar_path }} {{ je_jar_args }}
+  
 je_working_dir: ""
 je_java_options: ""
 je_jar_args: ""
