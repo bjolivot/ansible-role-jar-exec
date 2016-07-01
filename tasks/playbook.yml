@@ -1,5 +1,9 @@
 ---
 # here comes the real playbook, executed after env check
 
+- name: upload pre scipt file
+  template: src="before-jar-exec.sh.j2" dest="{{je_working_dir}}/before-jar-exec.sh" mode=0755
+
+
 - name: start jar
-  shell: cd {{ je_working_dir }} && java {{ je_java_options }} -jar {{ je_jar_path }} {{ je_jar_args }}
+  shell: cd {{ je_working_dir }} && ./before-jar-exec.sh && java {{ je_java_options }} -jar {{ je_jar_path }} {{ je_jar_args }}

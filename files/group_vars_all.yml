@@ -17,3 +17,7 @@
 # je_working_dir: ""
 # je_java_options: ""
 # je_jar_args: ""
+
+# env vars
+# je_env_vars: ["myvar=myvalue","othervar=othervalue"]
+# 

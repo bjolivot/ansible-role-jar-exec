@@ -24,6 +24,11 @@ optional vars  :
  je_java_options: java options (ex: -Xmx4g)
  je_jar_args: Arguments passed to jar
 
+environnement variables :
+these will be set just before jar execution
+ je_env_vars: ["myvar=myvalue","othervar=othervalue"]
+ 
+
 You can copy the file files/group_vars_all in the playbook group_vars/all/directory for easy config (allready done if playbook-generator is used)
 
 

@@ -12,3 +12,5 @@
 je_working_dir: ""
 je_java_options: ""
 je_jar_args: ""
+je_env_vars: []
+
